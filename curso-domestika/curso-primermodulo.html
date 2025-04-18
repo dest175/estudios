@@ -1,0 +1,56 @@
+<html>
+    <body>
+        <canvas width="600" height="600">
+
+        </canvas>
+        <script>
+            //primer imagen a codigo
+            let canvas = document.querySelector(`canvas`);
+            let context = canvas.getContext(`2d`);
+            
+            context.fillStyle = 'blue'
+           // context.fillRect(100, 100, 400, 400);
+
+            context.lineWidth = 4;
+            context.beginPath();
+            context.rect(100, 100, 400, 400);
+            //context.stroke();
+            context.beginPath();
+            context.arc(300, 300, 100, 0, Math.PI * 2);//w3schools.com/canvas
+           // context.stroke();
+ //arreglos
+            for(let i=0; i < 5; i++){
+                for(let j = 0;j<5;j++){
+                    let width = 60;
+                    let height = 60;
+                    let gap = 20;
+                    let x = 100 + (width + gap)*i;
+                    let y =100 + (height + gap)*j;
+                    
+                    context.beginPath();
+                    context.rect(x, y, width, height);
+                    context.stroke();
+                    
+                    if (Math.random() > 0.5){
+
+                        context.beginPath();
+                        context.rect(x +8, y + 8, width -16, height -16);
+                        context.stroke();
+                    }
+                }
+            }
+
+
+
+
+
+            //aqui puedes aprecar que son las varables y sus tiposxD
+            let year = 2025; //aki ves un dato en numeros
+            let nextYear = year +1; //puedes reemplazar datos con las variables ya creadas
+            let dinner ='arepa'; //aki pueddes ver un dato string que es igual a letras
+            let sentence = 'esta noche comeremos' + ` ${dinner}`//aqui use estas comilllas para darte a entender q puedes meter variables y letras
+            console.log(nextYear, sentence)
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+  padding: 20px;
+  background-color: powderblue;
+  border-radius: 12%;
+  margin-bottom: 20px;
+}
+
+.avatar-card {
+  display: flex; 
+  align-items: flex-start; 
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px; 
+  margin-bottom: 20px
+}
+
+.avatar-card img {
+  width: 80px; /* Ajusta el tamaño de la imagen */
+  height: 80px;
+  border-radius: 50%; /* Para hacerla circular */
+  margin-right: 15px; /* Espacio entre la imagen y el texto */
+  margin-bottom: 0; /* Asegurar que esté alineada arriba */
+}
+
+.avatar-info {
+  flex-grow: 1; 
+}
+
+.avatar-name {
+  font-size: 0.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.avatar-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0;
+}
+
+
+.buttons-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: auto; 
+  padding: 20px 0;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 2.1rem;
+}
+
+#botonXD {
+  background-color: #4caf89; 
+  color: white;
+}
+
+ #botonXD:hover{
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+ #botonxDnt{
+  background-color: #f49b36a9; /* Rojo */
+  color: rgba(199, 161, 91, 0.733);
+}
+
+ #botonxDnt:hover{
+  background-color: #da0b50b9;
+  transform: translateY(-2px);
+}
